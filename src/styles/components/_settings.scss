@@ -1,0 +1,86 @@
+.setting {
+  &_header {
+    &_title {
+      // color: $color-gray;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0;
+    }
+    i {
+      vertical-align: middle;
+    }
+  }
+
+  &_footer {
+    text-align: center;
+
+    &_text {
+      margin: 0;
+
+      i {
+        color: red;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.setting_item {
+  transition: opacity 0.5s ease-in;
+  width: 100%;
+
+  &.hidden {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  &_label {
+  }
+  &_options {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &_option {
+      margin: 0.5rem;
+      margin-bottom: 1rem;
+
+      label {
+        background: linear-gradient(
+            to right,
+            $color-lightgray 50%,
+            $color-x 50%
+          )
+          left;
+        background-size: 210%;
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        transition: 0.5s ease-out;
+      }
+
+      input[type="radio"]:checked + label {
+        background-position-x: right;
+        color: $color-white;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+    }
+  }
+
+  &_button {
+    background-color: $color-o;
+    border: none;
+    border-radius: 50px;
+    color: $color-white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 0.5rem 2rem;
+  }
+}

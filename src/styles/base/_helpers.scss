@@ -1,0 +1,25 @@
+.square {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.color-x {
+  color: $color-x;
+}
+
+.color-o {
+  color: $color-o;
+}
+
+.color-gray {
+  color: $color-gray;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.bg-x {
+  background-color: $color-x;
+}

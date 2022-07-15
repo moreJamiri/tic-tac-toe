@@ -1,0 +1,37 @@
+.game_turn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid $color-lightgray;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  margin: auto;
+  width: min-content;
+
+  &_item {
+    padding: 0.2rem 0.8rem;
+
+    i {
+      vertical-align: middle;
+      transition: color ease-in-out 0.5s;
+    }
+  }
+
+  &_circle {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    transition: left ease-in-out 0.5s;
+
+    &.turn-x {
+      background-color: $color-x;
+      left: 50%;
+    }
+    &.turn-o {
+      background-color: $color-o;
+      left: 0%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Abstracts
+@import "abstracts/variables";
+
+// Base
+@import "base/base";
+@import "base/fonts";
+@import "base/helpers";
+
+// Components
+@import "components/settings";
+@import "components/game_header";
+@import "components/game_board";
+@import "components/game_turn";
+@import "components/game_footer";
+@import "components/results";
+
+// Layout
+@import "layout/layout";

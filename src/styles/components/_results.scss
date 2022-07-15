@@ -1,0 +1,39 @@
+.result_container {
+  align-items: center;
+  background-color: rgba($color: $color-lightgray, $alpha: 0.7);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.result {
+  background-color: $color-white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba($color-gray, 0.4);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+
+  &_winner {
+  }
+
+  &_table {
+    width: 100%;
+
+    th {
+      border-bottom: 2px solid $color-lightgray;
+    }
+  }
+
+  &_button {
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0 0.5rem;
+    padding: 0.5rem 3rem;
+  }
+}
