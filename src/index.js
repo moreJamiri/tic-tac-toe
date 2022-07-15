@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "@fortawesome/fontawesome-free/css/all.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Radio from "./radio";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

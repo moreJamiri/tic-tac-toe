@@ -1,13 +1,16 @@
 .setting {
   &_header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
     &_title {
-      // color: $color-gray;
       font-size: 3rem;
       font-weight: 900;
-      margin: 0;
+      margin: 0 0.5rem;
     }
-    i {
-      vertical-align: middle;
+    &_image {
+      height: 3.5rem;
     }
   }
 

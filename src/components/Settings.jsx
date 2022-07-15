@@ -1,6 +1,7 @@
 import React from "react";
 import SettingButton from "./SettingButton";
 import SettingsItem from "./SettingsItem";
+import logo from "../logo.png";
 
 const Settings = ({ settings, setShowGame }) => {
   const handleChange = (e, setting) => {
@@ -26,11 +27,8 @@ const Settings = ({ settings, setShowGame }) => {
   return (
     <div className="container">
       <header className="setting_header">
-        <h1 className="setting_header_title">
-          <i className="fa fa-o color-o"></i>
-          <span> دوزبازی </span>
-          <i className="fa fa-x color-x"></i>
-        </h1>
+        <img className="setting_header_image" src={logo} alt="دوزبازی" />
+        <h1 className="setting_header_title">دوزبازی</h1>
       </header>
       <div className="setting_items">
         {settings.map((setting) => {
